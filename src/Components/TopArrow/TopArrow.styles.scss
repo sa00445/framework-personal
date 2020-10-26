@@ -1,0 +1,93 @@
+@media only screen and (min-width: 992px) {
+    .scrollTop {
+      position: fixed; 
+      width: 100%;
+      bottom: 150px;
+      left: 700px;
+      align-items: center;
+      height: 20px;
+      justify-content: center;
+      z-index: 1000;
+      cursor: pointer;
+      animation: fadeIn 0.3s;
+      transition: opacity 0.4s;
+      opacity: 0.5;
+    }
+    
+    .scrollTop:hover{
+      opacity: 1;
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0.5;
+      }
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 991px) {
+  .scrollTop {
+    position: fixed; 
+    width: 100%;
+    bottom: 150px;
+    left: 350px;
+    align-items: center;
+    height: 20px;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .scrollTop:hover{
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  .scrollTop {
+    position: fixed; 
+    width: 100%;
+    bottom: 150px;
+    left: 250px;
+    align-items: center;
+    height: 20px;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+  }
+  
+  .scrollTop:hover{
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+}
+
+
