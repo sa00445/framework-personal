@@ -5,3 +5,19 @@
     font-weight: 500;
     margin: 0 15px;
 }
+
+.logo-link {
+    text-decoration: none;
+    color: white !important;
+}
+
+@media (max-width: 600px) {
+    .ourMenuButton {
+        visibility: visible;
+    }
+}
+
+
+.ourMenuButton {
+    visibility: hidden;
+}

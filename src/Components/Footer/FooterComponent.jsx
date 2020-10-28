@@ -6,7 +6,7 @@ const Footer = () => (
 
 			<div class="footer-left">
 
-				<h3>Company<span>logo</span></h3>
+				<h3>POP<span>TROPICA</span></h3>
 
 				<p class="footer-links">
 					<a href="#" class="link-1">Home</a>
@@ -22,7 +22,7 @@ const Footer = () => (
 					<a href="#">Contact</a>
 				</p>
 
-				<p class="footer-company-name">Company Name © 2015</p>
+				<p class="footer-company-name">Company Name © 2020</p>
 			</div>
 
 			<div class="footer-center">
@@ -53,10 +53,10 @@ const Footer = () => (
 
 				<div class="footer-icons">
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+					<a href="#"><i class="fab fa-github"></i></a>
 
 				</div>
 

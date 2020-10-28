@@ -2,19 +2,43 @@ import React from 'react';
 import Header from '../Header/Header.component';
 import RecipeReviewCard from '../Card/Card.component';
 import Video from '../Video Component/Video.component';
-import Carousel from '../Carousel/Carousel.component';
 import ScrollArrow from '../TopArrow/TopArrow.component';
 import Footer from '../Footer/FooterComponent';
 import "./Home.styles.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ReactDOM from "react-dom"; 
+import CarouselNew from "../CarouselNew/CarouselNew.Component";
+import "../CarouselNew/CarouselNew.styles.scss";
 
 AOS.init();
 
 function Home() {
+    const images = [
+        {
+          description: "Mountains at night",
+          src:
+            "../../1-edited.png"
+        },
+        {
+          description: "Mountains with snow",
+          src:
+            "../../new_2_edited.jpg"
+        },
+        {
+          description: "Mountains with grass",
+          src:
+            "https://images.unsplash.com/photo-1509941943102-10c232535736?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        },
+        {
+          description: "Brown Mountains",
+          src:
+            "https://images.unsplash.com/photo-1512034705137-dc51c5ed36f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1042&q=80"
+        }
+      ];
     return(
         <div>
-                <Carousel title={"Our Work"} src1={require("../../../src/1-edited.png")} src2={"https://images.unsplash.com/flagged/photo-1564826836200-87e3faad54bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"} src3={"https://images.unsplash.com/photo-1451290173668-9a14beaf714c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1057&q=80"} src4={"https://images.unsplash.com/photo-1512034705137-dc51c5ed36f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1042&q=80"} src5={"https://images.unsplash.com/photo-1461141346587-763ab02bced9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1548&q=80"} />
+            <CarouselNew initialStep={1} images={images}/>
                 <div className="cards-container">
                     <div data-aos="fade-up" data-aos-offset="-500" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
                         <RecipeReviewCard src="https://images.unsplash.com/photo-1507679622673-989605832e3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />

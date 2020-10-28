@@ -3,7 +3,8 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { Link } from "react-router-dom";
-import ImageAvatars from '../Avatar/Avatar.Component'
+import ImageAvatars from '../Avatar/Avatar.Component';
+import './SimpleMenu.styles.scss';
 
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -28,10 +29,9 @@ export default function SimpleMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/about">About</Link></MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={handleClose}><Link className="our-link" to="/login">Log In</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className="our-link" to="/signup">Sign Up</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className="our-link" to="/">Logout</Link></MenuItem>
       </Menu>
     </div>
   );
