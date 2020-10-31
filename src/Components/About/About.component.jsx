@@ -3,7 +3,7 @@ import "./About.styles.scss"
 
 function About() {
     return(
-        <div>
+        <div className="about-container">
             <div className="about-div">
                 <div className="aboutText">
                 <h4>About Us</h4>

@@ -5,15 +5,36 @@
 
 .aboutImgDiv {
     width: 50%;
+    margin: 100px;
 }
 
 .aboutText {
     width: 50%;
     padding: 10px;
     line-height: 1.8rem;
+    margin-left: 50px;
 }
 
 .aboutImg {
-    width: 800px;
-    height: 500px;
+    width: 600px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .about-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutText {
+        width: 100%;
+        padding: 10px;
+        line-height: 1.8rem;
+    }
+    
+    .aboutImg {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
 }

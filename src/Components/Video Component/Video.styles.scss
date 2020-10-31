@@ -1,21 +1,22 @@
 .container {
     margin: 80px auto;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     background-color: #333;
-    width: 70%;
+    width: 90%;
 }
 
 .video-container {
     width: 30%;
-    margin: 0;
+    margin-right: 5px;
+    float: left;
 }
 
 .video {
     height: 350px;
     width: 430px;
     border: none;
-    margin: 0;
+    margin-right: 5px;
     padding: 70px 25px;
 }
 
@@ -24,8 +25,31 @@
     min-height: 200px;
     overflow: hidden;
     height: 400px;
-    margin: 0 auto;
+    margin: 0 auto 0 5px;
     color: white;
     line-height: 2em;
     text-align: justify;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        
+    }
+
+    .video-container {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        margin-right: 5px;
+    }
+
+    .our-text {
+        margin: 0 auto
+    }
+
+    .video {
+        width: 90%;
+        margin-right: 100px;
+    }
+
 }

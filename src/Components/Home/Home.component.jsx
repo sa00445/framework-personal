@@ -23,7 +23,7 @@ function Home() {
         {
           description: "Mountains with snow",
           src:
-            "../../new_2_edited.jpg"
+            "https://images.unsplash.com/photo-1516461240763-822a87484851?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1019&q=80"
         },
         {
           description: "Mountains with grass",

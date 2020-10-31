@@ -18,8 +18,8 @@ export default function SimpleMenu() {
   };
 
   return (
-    <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+    <div className="simple-menu-container">
+      <Button aria-controls="simple-menu" className="avatar-icon" aria-haspopup="true" onClick={handleClick}>
         <ImageAvatars />
       </Button>
       <Menu

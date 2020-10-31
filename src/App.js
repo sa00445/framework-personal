@@ -8,13 +8,14 @@ import Login from './Components/Login/Login.component';
 import Signup from './Components/Signup/Signup.component';
 import Details from './Components/Details/DetailsComponent';
 import Footer from './Components/Footer/FooterComponent';
-import Dashboard from './Components/Admin/Admin.Component'
+import Dashboard from './Components/Admin/Admin.Component';
+import NewHeader from './Components/NewHeader/NewHeader.Component';
 
 function App() {
   return (
     <div className="App">
     <BrowserRouter>
-    <Header />
+    <NewHeader />
     <Route exact path="/" component={Home}/>
         <Route path="/header" component={Header}/>
         <Route path="/about" component={About}/>
