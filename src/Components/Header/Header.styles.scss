@@ -11,13 +11,9 @@
     color: white !important;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .ourMenuButton {
-        visibility: visible;
+        display: block;;
     }
 }
 
-
-.ourMenuButton {
-    visibility: hidden;
-}
